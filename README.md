@@ -21,8 +21,6 @@
 ```
 root
 ├── .github
-├── cmd
-│   └── servo
 ├── config
 ├── docs
 ├── handlers
