@@ -1,3 +1,4 @@
+// Package logger sets up structured logging using zerolog.
 package logger
 
 import (
@@ -8,6 +9,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
+// Init configures global logger settings including log level and time format.
 func Init() {
 	// Set global log time format and level
 	zerolog.TimeFieldFormat = time.RFC3339

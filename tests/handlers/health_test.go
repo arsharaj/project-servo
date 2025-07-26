@@ -1,3 +1,4 @@
+// Package handlers_test contains tests for HTTP handler functions.
 package handlers_test
 
 import (
@@ -8,6 +9,8 @@ import (
 	"github.com/arsharaj/project-servo/handlers"
 )
 
+// TestHealthCheck verifies that the health check endpoint returns 200 OK
+// and the response is in application/json format.
 func TestHealthCheck(t *testing.T) {
 	req := httptest.NewRequest(http.MethodGet, "/healthz", nil)
 	w := httptest.NewRecorder()

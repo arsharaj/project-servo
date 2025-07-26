@@ -8,6 +8,8 @@ import (
 	"github.com/arsharaj/project-servo/middleware"
 )
 
+// TestRecoveryMiddleware verifies that the recovery middleware handles panics
+// and responds with a 500 Internal Server Error.
 func TestRecoveryMiddleware(t *testing.T) {
 	next := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		panic("simulated panic")

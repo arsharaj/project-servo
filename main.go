@@ -1,3 +1,4 @@
+// Package main is the entry point of the project servo web server.
 package main
 
 import (
@@ -13,6 +14,8 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
+// It initializes the logger, loads configuration, starts the HTTP server,
+// and handles graceful shutdown on termination signals.
 func main() {
 	// Initialize structured logging
 	logger.Init()
