@@ -2,6 +2,8 @@
 
 > High performance web server for modern applications
 
+<a href="https://pkg.go.dev/github.com/arsharaj/project-servo"><img src="https://pkg.go.dev/badge/github.com/arsharaj/project-servo.svg" alt="Go Reference"></a>
+
 ### Features
 
 - Graceful Shutdown
