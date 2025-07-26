@@ -7,6 +7,7 @@ import (
 	"github.com/go-chi/chi/v5"
 )
 
+// NewRouter creates and returns a new HTTP router with all routes mounted.
 func NewRouter() http.Handler {
 	r := chi.NewRouter()
 

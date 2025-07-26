@@ -1,3 +1,4 @@
+// Package middleware provides HTTP middleware for request handling.
 package middleware
 
 import (
@@ -7,6 +8,8 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
+// Recovery intercepts panics during HTTP request handling and returns a 500 error,
+// logging the stack trace and error details.
 func Recovery(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		defer func() {

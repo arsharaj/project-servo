@@ -1,3 +1,4 @@
+// Package middleware_test contains tests for HTTP middleware.
 package middleware_test
 
 import (
@@ -8,6 +9,8 @@ import (
 	"github.com/arsharaj/project-servo/middleware"
 )
 
+// TestLoggingMiddleware verifies that the logging middleware allows
+// the next handler to execute as expected.
 func TestLoggingMiddleware(t *testing.T) {
 	called := false
 	next := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

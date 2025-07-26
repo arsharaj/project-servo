@@ -1,3 +1,6 @@
+// Package config handles application configuration loading from environment variables.
+//
+// It provides the AppConfig variable that holds server settings like timeouts and addresses.
 package config
 
 import (
@@ -19,6 +22,7 @@ type Config struct {
 
 var AppConfig Config
 
+// Load initializes the AppConfig from environment variables, falling back to defaults if not set.
 func Load() {
 	// Load from .env file (if present)
 	_ = godotenv.Load()

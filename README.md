@@ -37,7 +37,15 @@ root
 
 ### Documentation
 
-Full documentation can be found in [docs](docs/) folder.
+View full documentation at [pkg.go.dev](https://pkg.go.dev/github.com/arsharaj/project-servo)
+
+### Packages
+
+- [`config`](https://pkg.go.dev/github.com/arsharaj/project-servo/config): Loads app configuration from `.env` or environment variables.
+- [`server`](https://pkg.go.dev/github.com/arsharaj/project-servo/server): Initializes and manages the HTTP server.
+- [`handlers`](https://pkg.go.dev/github.com/arsharaj/project-servo/handlers): Contains route handlers like health check.
+- [`middleware`](https://pkg.go.dev/github.com/arsharaj/project-servo/middleware): Provides logging and panic recovery middleware.
+- [`utils`](https://pkg.go.dev/github.com/arsharaj/project-servo/utils): Sends consistent JSON success/error responses.
 
 ### Running Tests
 
