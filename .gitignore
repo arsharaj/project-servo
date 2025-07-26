@@ -3,5 +3,6 @@
 # directories
 
 # hidden files
+.env
 
 # files
