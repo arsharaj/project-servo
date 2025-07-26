@@ -1,51 +1,38 @@
-## Repository Type : Repository Name
+## Project : Servo
 
-> Repository description or tagline
-
-Badges (if required)
-
-### Table of Contents
-
-- Item 1
-- Item 2
-- Item 3
+> High performance web server for modern applications
 
 ### Features
 
-- Feature 1
-- Feature 2
-- Feature 3
+- Graceful Shutdown
+- Structured Logging
+- Configuration Management
+- Middleware Support
+- Routing
+- JSON Response System
+- Unit and Integration Testing
 
 ### Requirements
 
-- Requirement 1
-- Requirement 2
-- Requirement 3
-
-### Installation
-
-1. Step 1
-2. Step 2
-3. Step 3
-
-### Usage
-
-1. Command 1
-2. Command 2
-3. Command 3
-
-### Website
-
-Website Screenshot
+- go : 1.24.4
 
 ### Folder Structure
 
 ```
 root
-├─── .github
-├─── docs
-├─── src
-└─── tests
+├── .github
+├── cmd
+│   └── servo
+├── config
+├── docs
+├── handlers
+├── logger
+├── middleware
+├── server
+├── tests
+│   ├── handlers
+│   └── middleware
+└── utils
 ```
 
 ### Documentation
@@ -54,7 +41,7 @@ Full documentation can be found in [docs](docs/) folder.
 
 ### Running Tests
 
-Run the following command to execute the test suite : `command to run tests`
+Run the following command to execute the test suite : `go test ./tests/...`
 
 ### Contributing
 
@@ -66,4 +53,4 @@ This project uses [Semantic Versioning](https://semver.org/).
 
 ### License
 
-[License Identifier](LICENSE)
+[MIT License](LICENSE)
