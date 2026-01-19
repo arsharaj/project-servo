@@ -1,0 +1,19 @@
+# hidden directories
+.git/
+.github/
+
+# directories
+tests/
+
+# hidden files
+.gitignore
+.dockerignore
+.env.sample
+
+# files
+CODEOWNERS
+DOCKERFILE
+LICENSE
+*.md
+*.yml
+*.yaml
