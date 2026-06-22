@@ -3,7 +3,7 @@ module github.com/arsharaj/project-servo
 go 1.24.4
 
 require (
-	github.com/go-chi/chi/v5 v5.2.2
+	github.com/go-chi/chi/v5 v5.2.4
 	github.com/joho/godotenv v1.5.1
 	github.com/rs/zerolog v1.34.0
 )
